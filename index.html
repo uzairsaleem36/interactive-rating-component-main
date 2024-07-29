@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind.config.js"></script>
+</head>
+
+<body class="bg-VeryDarkBlue">
+    <div class="main flex items-center justify-center h-screen">
+        <div class="flex flex-col justify-center bg-DarkBlue w-[420px] h-[400px] p-[30px] rounded-[25px]" id="ratingSection">
+            <div class="flex items-center justify-center bg-[rgb(41,49,60)] w-12 h-12 rounded-full mb-[20px]">
+                <img src="images/icon-star.svg" alt="Icon Star">
+            </div>
+
+            <div class="flex justify-center flex-col">
+                <h1 class="text-White font-bold text-[30px] font-Overpass">How did we do?</h1>
+                <p class="text-LightGrey md:text-base text-sm my-[10px]">
+                    Please let us know how we did with your support request. All feedback is appreciated
+                    to help us improve our offering!
+                </p>
+            </div>
+            <div class="flex justify-between mb-6">
+                <button class="rating-button transition-all duration-300 ease-in-out bg-[rgb(41,49,60)] md:w-16 w-11 md:h-16 h-11 text-white hover:bg-Orange rounded-full font-bold md:text-base text-sm">1</button>
+                <button class="rating-button transition-all duration-300 ease-in-out bg-[rgb(41,49,60)] md:w-16 w-11 md:h-16 h-11 text-white hover:bg-Orange rounded-full font-bold md:text-base text-sm">2</button>
+                <button class="rating-button transition-all duration-300 ease-in-out bg-[rgb(41,49,60)] md:w-16 w-11 md:h-16 h-11 text-white hover:bg-Orange rounded-full font-bold md:text-base text-sm">3</button>
+                <button class="rating-button transition-all duration-300 ease-in-out bg-[rgb(41,49,60)] md:w-16 w-11 md:h-16 h-11 text-white hover:bg-Orange rounded-full font-bold md:text-base text-sm">4</button>
+                <button class="rating-button transition-all duration-300 ease-in-out bg-[rgb(41,49,60)] md:w-16 w-11 md:h-16 h-11 text-white hover:bg-Orange rounded-full font-bold md:text-base text-sm">5</button>
+            </div>
+            <div>
+                <button id="submitBtn" class="w-[100%] bg-Orange hover:bg-white text-VeryDarkBlue p-3 rounded-2xl font-bold">Submit</button>
+            </div>
+        </div>
+
+        <div class="flex-col justify-center bg-[rgb(41,49,60)] gap-6 max-w-[420px] h-[400px] p-[20px] rounded-[25px] hidden" id="thankYouSection">
+            <div class="flex justify-center items-center my-7">
+                <img src="images/illustration-thank-you.svg" alt="Thank You Illustration">
+            </div>
+            <div class="flex items-center justify-center">
+                <p id="selected" class="bg-[rgb(41,49,60)] text-Orange font-normal rounded-full px-[20px] py-[5px] md:text-base text-sm"></p>
+            </div>
+            <div class="flex flex-col justify-center items-center text-center">
+                <h2 class="text-White text-3xl font-normal my-4">Thank you!</h2>
+                <p class="text-LightGrey md:text-base text-sm">
+                    We appreciate you taking the time to give a rating. If you ever need more support,
+                    don’t hesitate to get in touch!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
